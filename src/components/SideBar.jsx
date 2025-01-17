@@ -3,7 +3,9 @@ export default function SideBar(props) {
 
   return (
     <div className="sideBar">
-      <div onClick={handleToggleModal} className="bgOverlay"></div>
+      {
+        //<div onClick={handleToggleModal} className="bgOverlay"></div> 
+      }
       <div className="sideBarContents">
         <h2>{data?.title}</h2>
         <div className="descriptionContainer">

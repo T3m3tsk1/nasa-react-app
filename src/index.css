@@ -111,8 +111,8 @@ footer button:hover {
   padding: 1rem;
   overflow-y: scroll;
   height: 100%;
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 400px;
   margin-left: auto;
   background: #030615;
 }
@@ -177,14 +177,23 @@ footer button:hover {
 
 @media (min-width: 640px) {
   .sideBar {
-    position: relative;
-    inset: unset;
-    min-width: 30%;
+    position: sticky;
+    right: 0;
+    min-width: 35%;
+    width: 35%;
     max-height: 100vh;
     box-shadow: 0 0 40px 1px #030615;
   }
 
   .sideBarContents {
-    margin: auto;
+    margin: 0;
+    max-width: 100%;
   }
+}
+
+@media (min-width: 640px) and (max-width: 950px) {
+  .sideBar {
+    min-width: 45%;
+  }
+
 }
